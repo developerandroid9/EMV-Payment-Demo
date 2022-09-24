@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.uae.uaedemo.model.KernelAid" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/pading_5dp"
+        android:background="@drawable/aid_bg"
+        android:padding="@dimen/pading_5dp">
+
+        <TextView
+            android:id="@+id/headingAid"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_8dp"
+            android:text="@string/aid_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/aidTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_8dp"
+            android:text="@{data.aidName}"
+            app:layout_constraintStart_toEndOf="@+id/headingAid"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/appSel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_8dp"
+            android:text="@string/app_selection"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/headingAid" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_8dp"
+            android:text="@{data.selFlag}"
+            app:layout_constraintStart_toEndOf="@+id/appSel"
+            app:layout_constraintTop_toBottomOf="@+id/aidTV" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

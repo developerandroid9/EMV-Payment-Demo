@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_config_param"
+            android:title="@string/config_param" />
+        <item
+            android:id="@+id/nav_emv_param"
+            android:title="@string/emv_param" />
+        <item
+            android:id="@+id/nav_cls_param"
+            android:title="@string/cls_param" />
+        <item
+            android:id="@+id/nav_receipt_param"
+            android:title="@string/receipt_param" />
+        <item
+            android:id="@+id/nav_tms_connection_param"
+            android:title="@string/tms_connection_param" />
+        <item
+            android:id="@+id/nav_key_config_param"
+            android:title="@string/key_config_param" />
+        <item
+            android:id="@+id/nav_nol_param"
+            android:title="@string/nol_param" />
+        <item
+            android:id="@+id/nav_pos_component"
+            android:title="@string/pos_component" />
+        <item
+            android:id="@+id/nav_ca_key_param"
+            android:title="@string/ca_key_param" />
+    </group>
+</menu>

@@ -1,0 +1,32 @@
+package com.uae.uaedemo.model
+
+data class Master(
+    val addTerminalCapability: String,
+    val aidOption: String,
+    val aids: List<KernelAid>,
+    val cLessLimitDCV: String,
+    val cLessLimitNoDCV: String,
+    val cardDataInputCap: String,
+    val chipCVMCapabitlityNotReq: String,
+    val chipCVMCapabitlityReq: String,
+    val cvmLimit: String,
+    val dccctlessratelookupamt: String,
+    val defaultTAC: String,
+    val denialTAC: String,
+    val flrLimit: String,
+    val kernelConfiguration: String,
+    val kernelId: String,
+    val magStripeCVMCapabilityNotReq: String,
+    val magStripeCVMCapabilityReq: String,
+    val magStripeVersion: String,
+    val onlineTAC: String,
+    val payPassUDOL: String,
+    val riskManagement: String,
+    val securityCapability: String,
+    val suppLanguage: String,
+    val tcc: String,
+    val tdol: String,
+    val terminalCapability: String,
+    val txnLimit: String,
+    val versionNumber: String
+)

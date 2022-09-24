@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_config_param">
+
+    <fragment
+        android:id="@+id/nav_config_param"
+        android:name="com.uae.uaedemo.view.ConfigParamFragment"
+        android:label="@string/config_param"
+        tools:layout="@layout/fragment_configparam" />
+
+    <fragment
+        android:id="@+id/nav_emv_param"
+        android:name="com.uae.uaedemo.view.EmvParamFragment"
+        android:label="@string/emv_param"
+        tools:layout="@layout/fragment_emvparam" />
+
+    <fragment
+        android:id="@+id/nav_cls_param"
+        android:name="com.uae.uaedemo.view.ClsFragment"
+        android:label="@string/cls_param"
+        tools:layout="@layout/fragment_cls" />
+    <fragment
+        android:id="@+id/nav_receipt_param"
+        android:name="com.uae.uaedemo.view.ReceiptParamFragment"
+        android:label="@string/receipt_param"
+        tools:layout="@layout/fragment_receipt" />
+
+    <fragment
+        android:id="@+id/nav_tms_connection_param"
+        android:name="com.uae.uaedemo.view.TMSConnectionFragment"
+        android:label="@string/tms_connection_param"
+        tools:layout="@layout/fragment_t_m_s_connection" />
+    <fragment
+        android:id="@+id/nav_key_config_param"
+        android:name="com.uae.uaedemo.view.KeyConfigFragment"
+        android:label="@string/key_config_param"
+        tools:layout="@layout/fragment_key_config" />
+    <fragment
+        android:id="@+id/nav_nol_param"
+        android:name="com.uae.uaedemo.view.NOLParamFragment"
+        android:label="@string/nol_param"
+        tools:layout="@layout/fragment_n_o_l_param" />
+    <fragment
+        android:id="@+id/nav_pos_component"
+        android:name="com.uae.uaedemo.view.POSComponentFragment"
+        android:label="@string/pos_component"
+        tools:layout="@layout/fragment_p_o_s_component" />
+    <fragment
+        android:id="@+id/nav_ca_key_param"
+        android:name="com.uae.uaedemo.view.CaKeyFragment"
+        android:label="@string/ca_key_param"
+        tools:layout="@layout/fragment_ca_key" />
+</navigation>

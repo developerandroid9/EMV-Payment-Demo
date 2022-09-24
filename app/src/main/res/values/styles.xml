@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="Widget.Theme.UaeDemo.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+    <style name="my_custom" parent="Widget.MaterialComponents.CompoundButton.Switch">
+        <item name="materialThemeOverlay">@style/CustomCompoundButton_Switch</item>
+    </style>
+    <style name="CustomCompoundButton_Switch" >
+        <item name="colorSurface">@color/gray</item>
+        <item name="colorOnSurface">@color/purple_ex_light_700</item>
+        <item name="colorControlActivated">@color/purple__light_700</item>
+    </style>
+</resources>
